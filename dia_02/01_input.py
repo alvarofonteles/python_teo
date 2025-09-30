@@ -6,4 +6,5 @@ print(nome)
 
 profissao = input('Qual a sua Profissão: ')
 
-print(profissao)
+print('Quel baca na',nome,',',profissao,'é uma excelente profissão.')
+
