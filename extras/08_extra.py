@@ -47,3 +47,18 @@ print(f'\nDETALHAMENTO POR ESTADO')
 for estado, taxa in UF_TAXAS.items():
     resultado_uf = calc_imposto(VALOR_BASE, TAXA_BASE, **{estado: taxa})
     print(f'{estado.upper()} -> +{taxa * 100}% = R${resultado_uf:.2f}')
+
+# %% Speed Test
+import speedtest as st
+
+def SpeedTest():
+
+    test = st.Speedtest()
+    download_speed = test.download() / 1_000_000  # Mbps
+    upload_speed = test.upload() / 1_000_000      # Mbps
+
+    print(f"Download: {download_speed:.2f} Mbps")
+    print(f"Upload: {upload_speed:.2f} Mbps")
+# %%
+if __name__ == "__main__":
+    SpeedTest()
