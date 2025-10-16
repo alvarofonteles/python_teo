@@ -22,7 +22,7 @@ else:
 
 # %% # Imprimindo todos os preços das frutas
 # Use um loop para imprimir todas as frutas e seus preços formatados.
-print("Lista de preços das frutas:")    
+print("Lista de preços das frutas:")
 for fruta, preco in frutas.items():
-    print(f"A fruta {fruta} custa R$ {preco:.2f}") 
+    print(f"A fruta {fruta} custa R$ {preco:.2f}")
 # %%

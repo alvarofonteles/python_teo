@@ -11,11 +11,11 @@ dados_alvaro = {
     'idade': 42,
     'cidade': 'Curitiba',
     'nome': 'Alvaro',  # Chave duplicada, o último valor sobrescreve o anterior
-    'formacao': ['Desenvolvedor', 'Analista de Software', 'Engenheiro de Dados', 
+    'formacao': ['Desenvolvedor', 'Analista de Software', 'Engenheiro de Dados',
                  ['Big Data', 'Machine Learning']],
-    'cargos':[{'empresa': 'Empresa A', 'cargo': 'Desenvolvedor', 'anos': 3},
-              {'empresa': 'Empresa B', 'cargo': 'Analista de Software', 'anos': 5},
-              {'empresa': 'Empresa C', 'cargo': 'Engenheiro de Dados', 'anos': 2}]
+    'cargos': [{'empresa': 'Empresa A', 'cargo': 'Desenvolvedor', 'anos': 3},
+               {'empresa': 'Empresa B', 'cargo': 'Analista de Software', 'anos': 5},
+               {'empresa': 'Empresa C', 'cargo': 'Engenheiro de Dados', 'anos': 2}]
 }
 
 print(dados_alvaro)
@@ -36,7 +36,8 @@ print(f'''{dados_alvaro['formacao'][1]} \n'''
 # o primeiro acessa o 'dicionário {}' de cargos
 # o segundo acessa a 'lista []' de cargos
 # o terceiro acessa o 'dicionário {}' do cargo específico
-print(dados_alvaro['cargos'][1]['cargo']) # Acessando o cargo do segundo emprego
+# Acessando o cargo do segundo emprego
+print(dados_alvaro['cargos'][1]['cargo'])
 
 # %% Exemplo 3
 
@@ -44,7 +45,7 @@ dados_alvaro = {
     'nome': 'João',
     'idade': 42,
     'cidade': 'Curitiba',
-    'cargos':[{'empresa': 'A', 'cargo': 'Desenvolvedor', 'anos': 3}]
+    'cargos': [{'empresa': 'A', 'cargo': 'Desenvolvedor', 'anos': 3}]
 }
 
 print(dados_alvaro)
@@ -53,12 +54,16 @@ print(dados_alvaro.keys())  # Retorna as chaves do dicionário
 print(dados_alvaro.values())  # Retorna os valores do dicionário
 print(dados_alvaro.items())  # Retorna os pares chave-valor do dicionário
 
-dados_alvaro['idade'] = 43 # Atualizando valor
-dados_alvaro['profissao'] = 'Engenheiro de Dados'  # Adicionando nova chave-valor
+dados_alvaro['idade'] = 43  # Atualizando valor
+# Adicionando nova chave-valor
+dados_alvaro['profissao'] = 'Engenheiro de Dados'
 
-dados_alvaro['cargos'] = 'teste' # Substituindo lista por string
-dados_alvaro['cargos'] = [{'empresa': 'C', 'cargo': 'Desenvolvedor', 'anos': 3}] # Restaurando lista
-dados_alvaro['cargos'].append({'empresa': 'D', 'cargo': 'Analista de Software', 'anos': 5}) # Adicionando novo dicionário na lista
+dados_alvaro['cargos'] = 'teste'  # Substituindo lista por string
+dados_alvaro['cargos'] = [
+    {'empresa': 'C', 'cargo': 'Desenvolvedor', 'anos': 3}]  # Restaurando lista
+# Adicionando novo dicionário na lista
+dados_alvaro['cargos'].append(
+    {'empresa': 'D', 'cargo': 'Analista de Software', 'anos': 5})
 
 # %% laço for para iterar sobre chaves e valores
 # o i acessa as chaves do dicionário
@@ -68,7 +73,7 @@ for i in dados_alvaro:
 # %% laço for usando items() para iterar sobre chaves e valores
 
 # Retorna os pares chave-valor do dicionário [('nome', 'João'), ...]
-print(dados_alvaro.items()) 
+print(dados_alvaro.items())
 
 for item in dados_alvaro.items():
     print(item)

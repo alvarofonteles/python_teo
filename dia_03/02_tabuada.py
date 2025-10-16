@@ -19,7 +19,7 @@ print(f'{num} x 10 = {num * 10}')
 num = 3
 print(f'Tabuada do {num}')
 condicao = 1
-while condicao <=10 :
+while condicao <= 10:
     print(f'{num} x {condicao} = {num * condicao}')
     condicao += 1
 # %%

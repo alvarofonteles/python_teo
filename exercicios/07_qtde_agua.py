@@ -4,31 +4,32 @@ texto = '''digite sua opção:
 3 - Suco
 '''
 opcao = input(texto)
-if opcao == '1' : 
+if opcao == '1':
     bebida = 'água'
-elif opcao == '2' :
+elif opcao == '2':
     bebida = 'refrigerante'
-elif opcao == '3' :
+elif opcao == '3':
     bebida = 'suco'
-else :
+else:
     bebida = 'inválida'
 
 preco = 0
-if bebida != 'inválida' :
+if bebida != 'inválida':
     tamanho = input('Qual o tamanho? P - M - G: ')
-    if tamanho.upper() == 'P' :
+    if tamanho.upper() == 'P':
         preco = 3.00
-    elif tamanho.upper() == 'M' :
+    elif tamanho.upper() == 'M':
         preco = 5.00
-    elif tamanho.upper() == 'G' :
+    elif tamanho.upper() == 'G':
         preco = 7.00
-    else :
+    else:
         bebida = 'inválida'
 total = 0
 
-if bebida == 'inválida' :
+if bebida == 'inválida':
     print('Opção inválida')
-else :
+else:
     qtde = int(input('Quantas unidades? '))
     total = preco * qtde
-    print(f'Você escolheu {bebida} tamanho {tamanho.upper()} - Total: R$ {total:.2f}')
+    print(
+        f'Você escolheu {bebida} tamanho {tamanho.upper()} - Total: R$ {total:.2f}')

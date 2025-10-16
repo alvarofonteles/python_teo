@@ -9,7 +9,7 @@ while True:
     frase = input("Digite uma frase (ou '' para encerrar): ")
     if frase == "":
         break
-    
+
     if frase not in dados:
         dados[frase] = 1
     else:
@@ -33,11 +33,11 @@ dados = {
 print(dados)
 
 itens = list(dados.items())
-print(itens)   
-print(itens.sort()) 
+print(itens)
+print(itens.sort())
 
 # %%
-itens_ordenados = sorted(itens) # ordena por chave (frase)
+itens_ordenados = sorted(itens)  # ordena por chave (frase)
 print(itens_ordenados)
 
 # %%
@@ -45,18 +45,18 @@ print(itens_ordenados)
 # sort() é um método de listas que ordena a própria lista e não retorna nada.
 # usando lambda para definir a chave de ordenação
 itens = list(dados.items())
-itens.sort(key=lambda item: item[1]) # ordena por valor (contador)
-print(itens) # lista ordenada
+itens.sort(key=lambda item: item[1])  # ordena por valor (contador)
+print(itens)  # lista ordenada
 
 # %%
 # Ordenando com sorted()
 # sorted() é uma função que cria uma nova lista ordenada a partir de qualquer iterável
-itens_ordenados = sorted(dados.items()) # ordena por chave (frase)
-itens_ordenados = sorted(dados.items(), key=lambda item: item[1]) # ordena por valor (contador)
+itens_ordenados = sorted(dados.items())  # ordena por chave (frase)
+# ordena por valor (contador)
+itens_ordenados = sorted(dados.items(), key=lambda item: item[1])
 
 print(itens_ordenados)
 # %%
 # Qual a diferença entre sort() e sorted()?
 # sort() é um método de listas que ordena a própria lista e não retorna nada.
 # sorted() é uma função que cria uma nova lista ordenada a partir de qualquer iterável
- 

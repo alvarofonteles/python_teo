@@ -1,13 +1,13 @@
 # Tabuada de Soma
 # %%
-def tabuada_soma(numero, operador):    
-    operadores = ['+', '-', '/', '*'] # para algo escalável, futuro
+def tabuada_soma(numero, operador):
+    operadores = ['+', '-', '/', '*']  # para algo escalável, futuro
 
     if operador not in operadores:
         return f'Operador ({operador}) Inválido'
 
-    if operador == '+':    
-        if numero == 0: # executa toda a tabela
+    if operador == '+':
+        if numero == 0:  # executa toda a tabela
             for soma in range(1, 11):
                 print('')
                 for num_soma in range(1, 11):
@@ -18,12 +18,14 @@ def tabuada_soma(numero, operador):
 
 # Calculadora
 # %%
+
+
 def calculadora(num1, num2, operador):
     operadores = ['+', '-', '/', '*']
-    
+
     if operador not in operadores:
         return f'Operador ({operador}) Inválido'
-    
+
     if operador == '+':
         return num1 + num2
     elif operador == '-':
@@ -35,9 +37,11 @@ def calculadora(num1, num2, operador):
             return 'Erro: Divisão por zero'
         return num1 / num2
 
+
 # Tabuada de Soma
 # %%
-numero = int(input(f'Digite um numero de 1 - 10 \ne 0 para Toda Tabuada de Soma: '))
+numero = int(
+    input(f'Digite um numero de 1 - 10 \ne 0 para Toda Tabuada de Soma: '))
 operador = input(f'Digite Operador (+) Numérico: ')
 
 tabuada_soma(numero, operador)
@@ -50,5 +54,3 @@ operador = input('Digite o operador (+, -, *, /): ')
 
 resultado = calculadora(num1, num2, operador)
 print(f'Resultado: {resultado}')
-
-

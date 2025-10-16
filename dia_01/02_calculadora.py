@@ -6,7 +6,7 @@ print('1 + 1 =', 1 + 1)
 print('10 - 5 =', 10 - 5)
 
 # %%
-#Multiplicação
+# Multiplicação
 print('15 * 3 =', 15 * 3)
 
 # %%
@@ -22,7 +22,7 @@ print('10 / 4 =', 10/4)
 # Resto da Divisão (Mod %)
 # 10 / 4 = 2,5 , então 10 - 4 = 6
 # e 6 - 4 = 2
-print('10 % 4 = ',10 % 4)
+print('10 % 4 = ', 10 % 4)
 
 # Potência
 print('3 ** 2 =', 3**2)

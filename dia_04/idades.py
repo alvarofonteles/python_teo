@@ -4,7 +4,7 @@ idades = [7, 15, 42, 73, 3]
 print("Idades:", idades)
 
 idades.append(18)
-print("Idades após append:", idades) # Adiciona 18 ao final, mutável.
+print("Idades após append:", idades)  # Adiciona 18 ao final, mutável.
 
 # %%
 idades = []
@@ -22,7 +22,7 @@ max_idade = max(idades)
 min_idade = min(idades)
 qtde = len(idades)
 
-print(f'Média: {media} ' 
+print(f'Média: {media} '
       f'\nMáxima: {max_idade} '
       f'\nMínima: {min_idade} '
-      f'\nQuantidade: {qtde}' )
+      f'\nQuantidade: {qtde}')

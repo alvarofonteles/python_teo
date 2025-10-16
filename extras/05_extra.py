@@ -11,7 +11,8 @@ dados = {
 
 itens2 = list(dados.items())
 print(itens2)
-itens2.sort(key=lambda item: item[1], reverse=True) # ordena por valor (contador) decrescente
+# ordena por valor (contador) decrescente
+itens2.sort(key=lambda item: item[1], reverse=True)
 
 # como comentar várias linhas de código no VSCode?
 # selecione as linhas e use o atalho Ctrl + K + C (Windows) ou Cmd + K + C (Mac)
@@ -20,4 +21,4 @@ itens2.sort(key=lambda item: item[1], reverse=True) # ordena por valor (contador
 # for frase, contador in itens2:
 #     print(f'{frase} : {contador} vezes.')
 
-print(itens2)   
+print(itens2)

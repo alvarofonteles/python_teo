@@ -1,5 +1,5 @@
 # %%
-# Programa que lê 4 alturas usando um laço de repetição e 
+# Programa que lê 4 alturas usando um laço de repetição e
 # mostre a soma das delas.
 
 soma = 0
