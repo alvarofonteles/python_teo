@@ -1,0 +1,22 @@
+# Dados
+*.csv
+*.json
+
+# Environments
+venv/
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
